@@ -19,11 +19,20 @@
   }
 }
 
-.recipes {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 17em);
-  grid-gap: 13px;
+.recipesContainer {
+  display: flex;
+  width: 100%;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.recipes {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  width: 100%;
 }
 
 .recipe {

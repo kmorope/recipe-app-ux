@@ -11,6 +11,8 @@ const Footer = () => {
             className={styles.footer__logo}
             src={logo}
             alt="Con el Patrocinio de"
+            layout="fixed"
+            objectFit="contain"
           />
         </div>
       </div>

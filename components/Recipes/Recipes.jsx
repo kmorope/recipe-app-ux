@@ -41,12 +41,14 @@ const Recipes = (props) => {
     },
   ];
   return (
-    <div className={styles.container}>
-      <span className={styles.title}>Nuevas Recetas</span>
-      <div className={styles.recipes}>
-        {recipes.map((recipe, index) => (
-          <Recipe key={index} recipe={recipe} />
-        ))}
+    <div className={`${styles.container} mx-70`}>
+      <span className={`${styles.title}`}>Nuevas Recetas</span>
+      <div className={styles.recipesContainer}>
+        <div className={styles.recipes}>
+          {recipes.map((recipe, index) => (
+            <Recipe key={index} recipe={recipe} />
+          ))}
+        </div>
       </div>
     </div>
   );

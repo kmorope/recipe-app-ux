@@ -115,15 +115,11 @@ const NavBar = ({ isHeader }) => {
           <Image
             src={item.icon}
             alt={item.name}
-            width={
-              isMobile === true ? item.iconSizesXs.width : item.iconSizes.width
-            }
-            height={
-              isMobile === true
-                ? item.iconSizesXs.height
-                : item.iconSizes.height
-            }
+            width={item.iconSizes.width}
+            height={item.iconSizes.height}
             className={styles.menuItemIcon}
+            layout="fixed"
+            objectFit="fill"
           />
           <span>{isMobile === true ? item.short : item.name}</span>
         </li>
@@ -133,12 +129,12 @@ const NavBar = ({ isHeader }) => {
   return (
     <React.Fragment>
       {isHeader === true ? (
-        <nav className={styles.main}>
-          <a href="#" className="logo">
+        <nav className={`${styles.main}`}>
+          <a href="#" className="logo ml-70">
             <span className="recipe">Recipe</span>
             <span className="app">App</span>
           </a>
-          <ul className={styles.menu}>{renderMenuItems(false)}</ul>
+          <ul className={`${styles.menu} mr-70`}>{renderMenuItems(false)}</ul>
           <div className={styles.home}>
             <Image
               src="/assets/icons/ic_home.svg"

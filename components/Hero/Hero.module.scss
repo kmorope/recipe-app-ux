@@ -4,6 +4,7 @@
   z-index: -1;
   position: relative;
   width: 100%;
+  height: 234.34px;
   display: grid;
   align-items: center;
   justify-items: end;
@@ -15,11 +16,8 @@
   @include media(">=desktop") {
     height: 416px;
   }
-  @include media(">=tablet") {
+  @include media(">=tablet", "<desktop") {
     height: 249.34px;
-  }
-  @include media("<=phone") {
-    height: 234.34px;
   }
 }
 
