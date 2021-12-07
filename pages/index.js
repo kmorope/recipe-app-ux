@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Footer, Hero, NavBar, Recipes } from "./components";
+import { Footer, Hero, NavBar, Recipes } from "../components";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {

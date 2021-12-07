@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Footer.module.scss";
-import logo from "../../../public/assets/Footer.png";
+import logo from "../../public/assets/Footer.png";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
