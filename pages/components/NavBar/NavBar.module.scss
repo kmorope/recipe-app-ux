@@ -1,0 +1,100 @@
+@import "../../../styles/variables.scss";
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: 69px;
+  width: 100%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #8395a7;
+  opacity: 1;
+  top: 0;
+  z-index: 100;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 65px;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none !important;
+  color: var(--unnamed-color-425966);
+  text-align: right;
+  font: normal normal normal 13px/20px "Poppins", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  cursor: pointer;
+  &.selected,
+  &:hover {
+    color: var(--unnamed-color-d84a4a);
+  }
+  @include media("<desktop") {
+    display: none !important;
+  }
+  .menuItemIcon {
+    @include media(">phone") {
+      display: none !important;
+    }
+  }
+}
+
+.home {
+  display: none;
+  padding-right: 25px;
+  @include media("<desktop") {
+    display: block;
+  }
+}
+
+.mobile {
+  width: 100%;
+}
+
+.menuMobile {
+  margin-top: -10px;
+  z-index: 10;
+  list-style: none;
+  display: none;
+  grid-template-columns: repeat(auto-fill, 7em);
+  grid-gap: 13px;
+  justify-content: center;
+  @include media("<desktop") {
+    display: grid;
+  }
+
+  .mobileMenuItem {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5.07px;
+    width: 106px;
+    height: 85px;
+    background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 0px 5px 9px #8395a766;
+    border-radius: 10px;
+    opacity: 1;
+    color: var(--unnamed-color-425966);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-variant: medium;
+    font-size: 13px;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+}

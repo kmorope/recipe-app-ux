@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+.main {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  background-image: url("/assets/bcq.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  @include media(">=desktop") {
+    height: 416px;
+  }
+  @include media(">=tablet") {
+    height: 249.34px;
+  }
+  @include media("<=phone") {
+    height: 234.34px;
+  }
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  .recipes {
+    justify-self: flex-end;
+    font: normal normal normal 74px/111px "Poppins", sans-serif;
+  }
+  .all {
+    font: normal normal normal 67px/91px Monster Clubhouse, sans-serif;
+    position: absolute;
+    margin-top: 70px;
+  }
+}

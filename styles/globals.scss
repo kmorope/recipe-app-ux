@@ -1,0 +1,36 @@
+:root {
+  /* Colors: */
+  --unnamed-color-d84a4a: #d84a4a;
+  --unnamed-color-425966: #425966;
+}
+
+@import url("http://fonts.cdnfonts.com/css/monster-clubhouse");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+html,
+body,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  text-decoration: none !important;
+  opacity: 1;
+  .recipe {
+    font-family: "Monster Clubhouse", sans-serif;
+    font-size: 40px;
+    color: var(--unnamed-color-425966);
+    letter-spacing: 1.15px;
+  }
+  .app {
+    color: var(--unnamed-color-d84a4a);
+    font: normal normal normal 30px/46px "Poppins", sans-serif;
+    letter-spacing: 0.86px;
+  }
+}
+
+.hidden {
+  display: none !important;
+}

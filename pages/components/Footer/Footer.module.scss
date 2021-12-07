@@ -1,0 +1,38 @@
+@import "../../../styles/variables.scss";
+
+.footer {
+  margin-top: 102.23px;
+  height: 248px;
+  width: 100%;
+  display: flex;
+}
+
+.footer__container {
+  background: transparent linear-gradient(180deg, #c2e3f3 0%, #6aa3c1 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 4px 6px 23px #a9a9a911;
+  opacity: 1;
+  width: 100%;
+  height: 167px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  grid-column: 2;
+}
+
+.footer__partner {
+  color: var(--unnamed-color-425966);
+  font: normal normal normal 56px/76px "Monster Clubhouse";
+  letter-spacing: 0px;
+  @include media("<desktop") {
+    font: normal normal normal 23px/31px "Monster Clubhouse";
+  }
+}

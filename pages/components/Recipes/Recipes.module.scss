@@ -1,0 +1,122 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--unnamed-color-d84a4a);
+  text-align: left;
+  font: normal normal normal 54px/74px "Monster Clubhouse", sans-serif;
+  letter-spacing: 0px;
+  opacity: 1;
+  align-self: center;
+  @include media(">tablet") {
+    font: normal normal normal 67px/91px "Monster Clubhouse", sans-serif;
+    align-self: flex-start;
+  }
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 17em);
+  grid-gap: 13px;
+  justify-content: center;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  height: 323px;
+  .image {
+    align-self: center;
+  }
+  .card {
+    margin-top: -53px;
+    width: 266px !important;
+    background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 4px 6px 10px #bfc4cad1;
+    border-radius: 16px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.opened {
+      height: 386px !important;
+    }
+    &.closed {
+      height: 270px !important;
+    }
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 46.43px;
+      margin-left: 11.89px;
+      margin-right: 11.89px;
+      .cardTitle {
+        align-self: center;
+        color: var(--unnamed-color-d84a4a);
+        letter-spacing: -0.6px;
+        opacity: 1;
+        .poppins {
+          font-family: "Poppins", sans-serif;
+          font-size: 30px;
+        }
+        .monster {
+          font: normal normal normal 30px/40px "Monster Clubhouse", sans-serif;
+        }
+      }
+    }
+    .actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .qualification {
+        display: flex;
+        flex-direction: row;
+        gap: 12.5px;
+        .qualificationText {
+          color: var(--unnamed-color-425966);
+          text-align: left;
+          font: normal normal normal 26px/39px "Poppins", sans-serif;
+          letter-spacing: -0.52px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.specifications {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 19px;
+}
+
+.spec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.82px;
+}
+
+.specTitle {
+  color: var(--unnamed-color-d84a4a);
+  text-align: center;
+  font: normal normal normal 17px/20px "Monster Clubhouse", sans-serif;
+  letter-spacing: 0px;
+}
+
+.specText {
+  color: var(--unnamed-color-425966);
+  text-align: center;
+  font: normal normal normal 15px/20px Poppins, sans-serif;
+  letter-spacing: 0px;
+}
